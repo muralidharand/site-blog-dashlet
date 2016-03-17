@@ -1,42 +1,27 @@
-Site Blog Dashlet for Alfresco Share
+Site Blog Dashlet for Alfresco Share 5.0.2
 ====================================
 
-Author: Will Abson
+Author: Muralidharan Deenathayalan
+
+Thanks Will Abson for the original Site Blog Dashlet.
+
+This dashlet is migrated from Alfresco 4.x version to Alfresco Share 5.0.2 version.
+
+Please refer the below URI for the original post,if you're looking for Alfresco 4.x version.
+https://github.com/share-extras/site-blog-dashlet
+
 
 This add-on provides a dashlet to display the last ten blog posts and submit new posts from the site dashboard.
 
-![Site Blog Dashlet](screenshots/site-blog-dashlet.png)
+![Site Blog Dashlet](screenshots/site_blog.png)
 
 The _Create Post_ action provided by the dashlet allows quick and easy creation of new blog posts without leaving the dashboard.
 
-![Create Post Dialogue](screenshots/site-blog-dashlet-create-post.png)
+![Create Post Dialogue](screenshots/create_blog_post.png)
 
-Installation
-------------
+Once is added successfully, the dashlet will be updated.
 
-The dashlet is packaged as a single JAR file for easy installation into Alfresco Share.
+![New Blog Post Added](screenshots/site_blog_added.png)
 
-To install the dashlet, simply drop the `site-blog-dashlet-<version>.jar` file into the `tomcat/shared/lib` folder within your Alfresco installation, and restart the application server. You might need to create this folder if it does not already exist.
-
-Building from Source
---------------------
-
-An Ant build script is provided to build a JAR file containing the custom files, which can then be installed into the `tomcat/shared/lib` folder of your Alfresco installation.
-
-To build the JAR file, run Ant from the base project directory.
-
-    ant dist-jar
-
-The command should build a JAR file named `site-blog-dashlet-<version>.jar` in the `build/dist` directory within your project, which you can then copy into the `tomcat/shared/lib` folder of your Alfresco installation.
-
-Alternatively, you can use the build script to _hot deploy_ the JAR file directly into a local Tomcat instance for testing. You will need to use the `hotcopy-tomcat-jar` task and set the `tomcat.home` property in Ant.
-
-    ant -Dtomcat.home=C:/Alfresco/tomcat hotcopy-tomcat-jar
-    
-After you have deployed the JAR file you will need to restart Tomcat to ensure it picks up the custom resources.
-
-Usage
------
-
-  1. Log in to Alfresco Share and navigate to a site dashboard.
-  2. Click the _Customize Dashboard_ button to edit the contents of the dashboard and drag the dashlet into one of the columns from the list of dashlets.
+For installation and deployment steps, please refer the below URI.
+https://github.com/share-extras/site-blog-dashlet
